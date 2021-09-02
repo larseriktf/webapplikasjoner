@@ -29,3 +29,9 @@ Har gjort som beskrevet
 Har gjort som beskrevet
 
 ## Oppgave 6
+
+Link to trello: https://trello.com/b/aIpH12I1/agile
+
+I didn't find how to create an epic, but I added the Epic by Screenful power-up.
+
+<img src="resources/images/trello_board.jpg" alt="Flow chart showcasing a possible path of an attendee" width="750"/>
