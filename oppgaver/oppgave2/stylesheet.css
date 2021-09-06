@@ -1,0 +1,48 @@
+body {
+    margin: 0;
+    font-family: "Segoe UI";
+    color: #494949;
+}
+
+#page-grid {
+    display: grid;
+    grid-template-columns: 1fr 1024px 1fr;
+    grid-template-rows: auto auto 10em;
+    grid-template-areas:
+        "main-header main-header main-header"
+        ".           main        ."
+        "footer      footer      footer";
+}
+
+#main-header {
+    grid-area: main-header;
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 0 -5px 11px 11px rgba(0, 0, 0, 0.1);
+}
+
+#main-header > h1, #main-header > p {
+    margin: 1em;
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+main {
+    grid-area: main;
+}
+
+footer {
+    grid-area: footer;
+}
+
+.todo-card-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    list-style-type: none;
+    padding: 0;
+}
+
+.todo-card-list > li {
+    width: 20em;
+}
