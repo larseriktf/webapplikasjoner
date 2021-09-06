@@ -1,0 +1,67 @@
+body {
+    margin: 0;
+    font-family: "Segoe UI";
+    color: #494949;
+}
+
+#page-grid {
+    display: grid;
+    grid-template-columns: 1fr 1024px 1fr;
+    grid-template-rows: auto auto 10em;
+    grid-template-areas:
+        "main-header main-header main-header"
+        ".           main        ."
+        "footer      footer      footer";
+}
+
+#main-header {
+    grid-area: main-header;
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 0 -5px 11px 11px rgba(0, 0, 0, 0.1);
+}
+
+#main-header > h1, #main-header > p {
+    margin: 1em;
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+main {
+    grid-area: main;
+}
+
+footer {
+    grid-area: footer;
+}
+
+.todo-card-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    list-style-type: none;
+    padding: 0;
+}
+
+.todo-card {
+    box-sizing: border-box;
+    padding: 2em;
+    width: 19em;
+    margin-bottom: 3em;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(90, 210, 193, 0.25);
+}
+
+.todo-card > h3 {
+   margin: 0 0 0.35em 0; 
+}
+
+.todo-card > p {
+    max-height: 4em;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    margin: 0 0 1.5em 0;
+}
