@@ -3,12 +3,17 @@
     display: flex;
     justify-content: space-between;
     box-shadow: 0 -5px 11px 11px rgba(0, 0, 0, 0.1);
-}
 
-#main-header > h1, #main-header > p {
-    margin: 1em;
-    font-size: $text-medium;
-    font-weight: bold;
+    > h1, > nav {
+        margin: 1em;
+        font-size: $text-medium;
+        font-weight: bold;
+    }
+
+    > nav > a {
+        text-decoration: none;
+        color: $text-dark;
+    }
 }
 
 #input-title {

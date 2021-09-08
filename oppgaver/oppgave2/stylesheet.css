@@ -126,10 +126,15 @@ footer {
           box-shadow: 0 -5px 11px 11px rgba(0, 0, 0, 0.1);
 }
 
-#main-header > h1, #main-header > p {
+#main-header > h1, #main-header > nav {
   margin: 1em;
   font-size: 1.3rem;
   font-weight: bold;
+}
+
+#main-header > nav > a {
+  text-decoration: none;
+  color: #494949;
 }
 
 #input-title {
