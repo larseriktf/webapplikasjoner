@@ -7,6 +7,14 @@
 
 #main-header > h1, #main-header > p {
     margin: 1em;
-    font-size: 1.25rem;
+    font-size: $text-medium;
     font-weight: bold;
+}
+
+#input-title {
+    Width: 450px;
+}
+
+#input-username {
+    Height: 150px;
 }

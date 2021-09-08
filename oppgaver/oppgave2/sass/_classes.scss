@@ -12,7 +12,7 @@
     width: 19em;
     margin-bottom: 3em;
     border-radius: 10px;
-    box-shadow: 0 5px 15px transparentize($theme-color, 0.75);
+    box-shadow: 0 5px 15px transparentize($theme-base, 0.75);
 
     > p {
         max-height: 4em;
@@ -30,4 +30,41 @@
 .section-form {
     box-sizing: border-box;
     min-height: 425px;
+    padding: 3em 0;
+}
+
+.button-std {
+    background-color: $theme-base;
+    border: none;
+    height: $element-medium;
+    font-weight: bold;
+    color: $text-light;
+    font-size: $text-standard;
+
+    &:hover {
+        background-color: lighten($theme-base, 10%);
+        cursor: pointer;
+    }   
+}
+
+.curved { border-radius: 5px; }
+
+.flex-right {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.element-small {
+    font-size: $text-small;
+}
+
+.element-medium {
+    font-size: $text-medium;
+    padding: 0 $element-medium;
+    width: auto;
+}
+
+.element-large {
+    font-size: $text-large;
 }
