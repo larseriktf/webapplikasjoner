@@ -1,0 +1,56 @@
+{
+    "questions": [
+        {
+            "title": "Hva står TDD for?",
+            "answers": [
+                { "answer": "Type Driven Development" },
+                { "answer": "Test Daily Development" },
+                {
+                    "answer": "Test Driven Development",
+                    "correct": true
+                },
+                { "answer": "Test Development Driven " }
+            ],
+            "helper": { "text": "Den er test-dreven..." }
+        },
+        {
+            "title": "Hva er kjernen i TDD? (Test Driven Development)",
+            "answers": [
+                { "answer": "Å ha så mange tester som mulig" },
+                {
+                    "answer": "Å kode ut ifra testene med Red-Green-Refactor prossessen",
+                    "correct": true
+                },
+                { "answer": "Å ha 100% test-coverage" },
+                { "answer": "ATDD" }
+            ],
+            "helper": { "text": "Tester først..." }
+        },
+        {
+            "title": "Hva er hensikten med Mocking?",
+            "answers": [
+                { "answer": "Å lage objekter med dummy-data som kan brukes til testing" },
+                { "answer": "Å kun håndtere testing av asynkrone funksjoner" },
+                { "answer": "Å være vanskelig å forstå" },
+                {
+                    "answer": "Å bytte ut deler av programmet med kode som simulerer den opprinnelige oppførelsen, slik at man unngår å teste kode som ikke skal testes",
+                    "correct": true
+                }
+            ],
+            "helper": { "text": "Noe som simulerer noe..." }
+        },
+        {
+            "title": "Hva er et Promise (Angående asynkron testing)?",
+            "answers": [
+                { "answer": "Det er at programmet venter på at en asynkron funksjon blir ferdigkjørt" },
+                {
+                    "answer": "Det er et løfte fra en asynkron funksjon som lover å returnere enten en verdi eller 'Rejected' når den asynkrone funksjonen har kjørt ferdig",
+                    "correct": true
+                },
+                { "answer": "Det er et løfte om at asynkrone funksjoner skal returnere en verdi" },
+                { "answer": "Det er en timer som venter på at den asynkrone funksjonen kjører ferdig" }
+            ],
+            "helper": { "text": "Et løfte..." }
+        }
+    ]
+}
