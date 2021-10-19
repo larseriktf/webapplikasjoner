@@ -1,0 +1,13 @@
+#page-grid {
+    display: grid;
+    grid-template-columns: 1fr 1024px 1fr;
+    grid-template-rows: auto auto 10em;
+    grid-template-areas:
+        "main-header main-header main-header"
+        ".           main        ."
+        "footer      footer      footer";
+}
+
+main { grid-area: main; }
+
+footer { grid-area: footer; }

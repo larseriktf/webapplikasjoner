@@ -1,0 +1,19 @@
+body {
+    margin: 0;
+    font-family: "Segoe UI";
+    font-size: $text-standard;
+    color: $text-dark;
+}
+
+input {
+    display: block;
+    height: $element-medium;
+    width: 100%;
+    border: 2px solid $border;
+    margin: 5px 0 15px 0;
+    @extend .curved;
+}
+
+label {
+    font-weight: bold;
+}

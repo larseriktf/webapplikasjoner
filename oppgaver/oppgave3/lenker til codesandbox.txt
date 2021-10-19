@@ -1,0 +1,8 @@
+Oppgave 0:
+https://codesandbox.io/s/intro-oppgaver-forked-vz7ru?file=/src/index.js
+
+Oppgave 1:
+https://codesandbox.io/s/oppgave-1-forked-2q5nr?file=/src/start.js
+
+Oppgave 2:
+https://codesandbox.io/s/oppgave-2-forked-094kz?file=/src/ingen_hjelp.js
