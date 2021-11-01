@@ -34,9 +34,8 @@ export default function AddQuote() {
         await createQuotes();
     };
 
-    if (error) {
+    if (error)
         return <p>Something went wrong: {error}</p>;
-    }
 
     return (
         <>

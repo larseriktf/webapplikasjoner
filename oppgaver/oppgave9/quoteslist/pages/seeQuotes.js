@@ -15,7 +15,8 @@ export default function ReviewQuote() {
         }
     };
 
-    useEffect(() => {
+    useEffect(
+        () => {
         getQuotes();
     }, []);
 
