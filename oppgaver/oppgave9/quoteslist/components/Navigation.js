@@ -3,14 +3,23 @@ import Link from "next/Link";
 export const Navigation = () => {
     return (
         <nav className="navigation">
-            <link href="/" passHref>
-                <a>Home</a>
-            </link>
-            <link href="/quotes">
-                <a className="first">
-                    Quotes page
-                </a>
-            </link>
+            <ul>
+                <li>
+                    <Link href="/" passHref>
+                        <a>Home</a>
+                    </Link>
+                </li>
+                <li>
+                    <Link href="/seeQuotes">
+                        <a className="first">See Existing Quotes</a>
+                    </Link>
+                </li>
+                <li>
+                    <Link href="/addQuote">
+                        <a className="first">Add a Quote</a>
+                    </Link>
+                </li>
+            </ul>
         </nav>
-    )
-}
+    );
+};

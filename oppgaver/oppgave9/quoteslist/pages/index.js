@@ -1,48 +1,13 @@
-import { useState } from "react";
+import Head from "next/head";
+import Image from "next/image";
+import styles from "../styles/Home.module.css";
+import { Layout } from "../components/Layout";
 
-import axios from "axios";
-
-export default function AddQuote() {
-    const [quotes, setQuotes] = useState([]);
-    const [quote, setQuote] = useState("");
-    const [error, setError] = useState(null);
-
-    const handleQuoteChange = (e) => setQuote(e.target.value);
-
-    const createQuotes = async () => {
-        try {
-            const response = await axios.post("/api/quotes", { quote });
-
-            if (response?.data?.success === true) setQuotes(response.data.data);
-        } catch (err) {
-            setError(err?.response?.data?.error);
-        }
-    };
-
-    const handleSubmit = async (e) => {
-        e.preventDefault();
-        await createQuotes();
-    };
-
-    if (error) {
-        return <p>Something went wrong: {error}</p>;
-    }
-
+export default function Home() {
     return (
         <>
-            <h1>Create Quiz</h1>
-            <form onSubmit={handleSubmit}>
-                <label htmlFor="quote">Add Quote</label>
-                <input
-                    id="quote"
-                    type="text"
-                    name="quote"
-                    value={quote}
-                    onChange={handleQuoteChange}
-                />
-                <button type="submit">Send</button>
-            </form>
-            <section>{JSON.stringify(quotes)}</section>
+            <h1>Home page</h1>
+            <Layout/>
         </>
     );
 }
